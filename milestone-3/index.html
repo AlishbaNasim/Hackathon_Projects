@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="shortcut icon" href="./favicon_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Add header to make clear readability -->
+    <header>
+        <h3 style="background-color: cadetblue;">Dynamic Resume Builder</h3>
+        <div class="container">
+            <form id="resume-form">
+                <!-- For personal information -->
+                <h3 style="background-color:darkcyan;">Personal Information</h3>
+                <input type="text" id="name-input" placeholder="Name" required/>
+                <input type="text" id="email-input" placeholder="Email" required/>
+                <input type="tel" id="phone-input" placeholder="Phone number" required/>
+
+                <!-- For Education information -->
+                <h3 style="background-color:darkcyan;">Education</h3>
+                <textarea id="edu-input" placeholder="Education Detail" required></textarea>
+
+                <!-- For skills information -->
+                <h3 style="background-color:darkcyan;">Skills</h3>
+                <textarea id="skill-input" placeholder="Skills Detail" required></textarea>
+
+                <!-- For experience information -->
+                <h3 style="background-color:darkcyan;">Experience</h3>
+                <textarea id="experience-input" placeholder="Experience Detail" required></textarea>
+                <br>
+                <!-- Button for generating resume -->
+                <button type="submit" id="submit">Generate Resume</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Make display resume -->
+    <div id="resume">
+        <!-- Store personal data -->
+        <section id="personal-info">
+            <h2 id="name">Your Name</h2>
+            <p id="contact">Email | Phone</p>
+        </section>
+        <!-- Store skills data -->
+        <section class="skills">
+            <h2>Your Skills</h2>
+            <ul id="skills-list"></ul>
+        </section>
+        <!-- Store education data -->
+        <section class="education">
+            <h2>Your Education</h2>
+            <ul id="education-list"></ul>
+        </section>
+        <!-- Store experience data -->
+        <section class="experience">
+            <h2>Your Experience</h2>
+            <ul id="experience-list"></ul>
+        </section>
+    </div>
+    <hr/>
+    <footer>
+        <div>
+            <span>Copyright</span>
+            <br/>
+            <p>@Alishba Naseem</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

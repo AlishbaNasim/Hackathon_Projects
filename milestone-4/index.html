@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Editable Resume Builder by Alishba Naseem</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br/>
+            <label for="email">Email:</label>
+            <input type="text" id="email" required>
+            <br/>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <br/>
+            <textarea id="education" rows="5" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <br/>
+            <textarea id="skills" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <br/>
+            <textarea id="experience" rows="3" required></textarea>
+        </fieldset>
+
+        <button type="submit" id="generateButton">Generate Resume</button>
+    </form>
+
+
+    <!-- Placeholder for the generated resume -->
+    <div id="resumeOutput" class="resume-preview" contenteditable="true"></div>
+
+    <button id="idButton" class="editButton">Edit</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

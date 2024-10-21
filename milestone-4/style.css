@@ -1,0 +1,120 @@
+/* style.css */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#bf8bf0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.resume-preview {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background:hsl(271, 42%, 35%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color:chartreuse;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color:aqua;
+}
+
+input[type="text"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styles */
+button {
+    background-color: #5cb85c;
+    border:#0275d8;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.idButton {
+    background-color: #0275d8;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+
+.editButton:hover {
+    background-color: #6b961a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}

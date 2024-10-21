@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4a90e2; /* Soft blue for the main heading */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%; /* Use percentage for responsiveness */
+    margin: 0 auto 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: wheat;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem; /* Use rem for font size to scale properly */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Make inputs take full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Focus styles for input and textarea */
+input:focus, textarea:focus {
+    border-color: #4106a0; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a90e2; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rebeccapurple; /* Darker color on hover */
+}
+
+/* Resume Display Styles */
+#resume {
+    max-width: 90%; /* Use percentage to adjust on smaller screens */
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 4px solid #949207;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Matching shadow for resume */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2, section h3 {
+    color: green; /* Consistent color for headings */
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    line-height: 1.6;
+}
+
+/* Contact information styling */
+#contact {
+    font-style: italic;
+    color: #666; /* Subtle gray for contact details */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust form and resume for tablet screens */
+    form, #resume {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    input, textarea, button {
+        font-size: 14px; /* Slightly smaller text for smaller screens */
+    }
+}
+footer{
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for mobile devices */
+    form, #resume {
+        max-width: 100%;
+        padding: 10px;
+        box-shadow: none; /* Remove shadow on smaller screens for simplicity */
+        border: none;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px; /* Smaller button size on mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller heading size for mobile */
+    }
+}

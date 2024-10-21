@@ -1,0 +1,77 @@
+/* Basic Styling */
+/* Stylying in body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: whitesmoke;
+    max-width: 100%;
+    padding: 0 10px;
+    background-color: black;
+
+}
+/* Stylying in header */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Stylying in footer*/
+footer{
+    text-align: center;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Stylying in profile picture*/
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+/* Stylying in all sections*/
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid hsl(231, 83%, 47%);
+    border-radius: 5px;
+}
+/* Stylying in all h2*/
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  
+}
+/* Stylying in botton*/
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Stylying in button*/
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+/* Design for Responsive  */
+@media (max-width: 600px) {
+    header, section {
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+    }
+}

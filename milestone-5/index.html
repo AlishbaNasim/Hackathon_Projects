@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shareable Resume</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+  <form id="resume-form" class="resume-share">
+
+  <div class="class-container">
+    <!-- Main form for the resume -->
+
+      <h1>Shareable Resume by Alishba Naseem</h1>
+
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="enter your name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="enter your email" required  />
+        <br />
+      </fieldset>
+
+      <!-- Education Section -->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="degree">Degree:</label>
+        <br />
+        <input id="degree" type="text" placeholder="your degree" required />
+        <br />
+        <label for="schl_uni">School/ University:</label>
+        <br />
+        <input id="schl_uni" type="text" placeholder="your school name" required />
+        <br />
+        <label for="Year">Year:</label>
+        <br />
+        <input id="Year" type="text" placeholder="passing out year" required />
+      </fieldset>
+
+      <!-- Experience Section -->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="office-name">Office name:</label>
+        <br />
+        <input id="office-name" type="text"  placeholder="your office name" required />
+        <br />
+        <label for="job-title">Job Title:</label>
+        <br />
+        <input id="job-title" type="text" placeholder="your job title  " required />
+        <br />
+        <label for="Year-Experience">Year of Experience:</label>
+        <br />
+        <input id="Year-Experience" type="text" placeholder="year of experience" required />
+      </fieldset>
+
+      <!-- Skills Section -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <br />
+        <input id="skills" type="text" placeholder="your skills" required />
+      </fieldset>
+
+      <!-- Buttons and Output Section -->
+      <button id="generate" type="button" class="resume-generate">Generate Resume</button>
+
+      <hr/>
+      <!-- Dynamic Editable Resume Display -->
+      <div id="resume">
+        <div id="resume-content"></div>
+      </div>
+
+      <div id="share-section">
+        <button type="button" id="copy-link-btn" target="_blank" style="display: inline-block;">Copy shareable link</button> 
+        <a id="shareable-link" href="#" target="_blank" style="display: none;"></a>
+        <button type="button" id="pdf-download" style="display: inline-block;">Download PDF</button>
+      </div>
+      
+      <!-- Footer -->
+      <footer>
+        <div>
+          <span>Copyright</span>
+          <hr />
+          <p>@Alishba Naseem</p>
+        </div>
+      </footer>
+    </form>
+   
+  </div>
+   <!-- Link to your TypeScript compiled to JavaScript -->
+   <script src="index.js" defer></script>
+
+</body>
+</html>
